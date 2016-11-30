@@ -1,0 +1,47 @@
+#Where things are
+source_dir:		.
+destination_dir:	./_site
+plugins_dir:		./_plugins
+layouts_dir:		./_layouts
+data_dir:		./_data
+collections:		null
+
+#Handling reading
+safe:			false
+include:		[".htaccess", "_pages"]
+exclude:		[]
+keep_files:		[".git", ".svn"]
+encoding:		"utf-8"
+markdown_ext:		"md"
+
+#Filtering content
+show_drafts:		null
+limit_posts:		0
+future:			true
+unpublished:		false
+
+#Plugins
+whitelist:		[]
+gems:			[]
+
+#Conversion
+markdown:		kramdown
+highlighter:		rouge
+lsi:			false
+excerpt_separator:	"\n\n"
+
+#Serving
+detach:			false
+port:			4000
+host:			0.0.0.0
+baseurl:		""	#does not include host name
+
+#Outputting:
+permalink:		date
+paginate_path:		/page:num
+timezone:		null
+quiet:			false
+defaults:		[]
+
+#Markdown processors
+#TODO
