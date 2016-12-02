@@ -5,6 +5,6 @@ layout: section
 ---
 
 
-The quick brown fox jumps over the lazy dog. And this is all about.
+Joel's personal playground. 
 
-
+About page is still underconstruction. More information to come.

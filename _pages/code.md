@@ -3,6 +3,8 @@ title: Code Higlights
 permalink: /codes/
 ---
 
+Testing of higlighter:
+
 {% highlight python %}
 
 class Shape(object):
