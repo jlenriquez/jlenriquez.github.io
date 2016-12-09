@@ -16,8 +16,8 @@ permalink: /resume/
 #####2001/03 - 2002/09: Computer Programmer at Alvion Asia a marketing and data list platform company.
 
 ####Project Highlights
-Developed applications that detects differences between images. A master image will serve as the reference point to be matched and compared to identical areas of an image. There are several image processing techniques used to achieve desired result. Application includes (but not limited to): Detection of broken character, dirts, tape marks and other printing defects. Main usage is for industrial automation of quality printing inspection.
+- Developed applications that detects differences between images. A master image will serve as the reference point to be matched and compared to identical areas of an image. There are several image processing techniques used to achieve desired result. Application includes (but not limited to): Detection of broken character, dirts, tape marks and other printing defects. Main usage is for industrial automation of quality printing inspection.
 
-Implementation of intensive data processing by leveraging threads asynchronously. These results to smooth flow of operations on factories which requires fast transition between printing jobs.
+- Implementation of intensive data processing by leveraging threads asynchronously. These results to smooth flow of operations on factories which requires fast transition between printing jobs.
 
-Developed an image gallery product for filing and tracking inspected jobs. The product is still available and has been widely sold-out to different printing companies in Japan and international markets. 
+- Developed an image gallery product for filing and tracking inspected jobs. The product is still available and has been widely sold-out to different printing companies in Japan and international markets. 
