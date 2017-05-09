@@ -6,6 +6,7 @@ permalink: /resume/
 {{ page.title }}
 
 #Joel Enriquez
+
 ##Experienced System Engineer with a demonstrated working history in the field of industrial automation. Skilled in development of Computer Vision and Machine Learning applications.
 
 ###Bachelor in Computer Science & Developer of Stuff
