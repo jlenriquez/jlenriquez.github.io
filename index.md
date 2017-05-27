@@ -1,9 +1,11 @@
 ---
-title: Index page
-description: This is a test page
+title: Joel Enriquez
+description: Developer of stuff
 layout: default
 ---
 
 {{ page.title }}
 
-{{ page.description }}
+<div class="blurb">
+	{{ page.description }}
+</div><!-- /.blurb -->
