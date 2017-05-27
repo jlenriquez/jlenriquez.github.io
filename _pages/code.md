@@ -1,6 +1,7 @@
 ---
 title: Code Higlights
 permalink: /codes/
+layout: section
 ---
 
 Testing of higlighter:
