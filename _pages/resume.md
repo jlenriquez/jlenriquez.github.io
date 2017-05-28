@@ -3,9 +3,8 @@ title: Resume
 permalink: /resume/
 layout: section
 active3: active
+footer_css_dir: ../css/
 ---
-
-{{ page.title }}
 
 #Joel Enriquez
 

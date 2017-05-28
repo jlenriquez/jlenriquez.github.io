@@ -1,8 +1,14 @@
 ---
-title: Revision list
+title: Page Revisions
 permalink: /revision/
 layout: section
 active5: active
+footer_css_dir: ../css/
 ---
 
-{{ page.title }}
+<div>
+	<ul>
+		<li>20161118 Initial commit on Github.</li>
+		<li>20170528 Initial implementation of Bootstrap.</li>
+	</ul>
+</div>

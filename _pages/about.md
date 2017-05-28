@@ -3,8 +3,8 @@ title: About
 permalink: /about/
 layout: section
 active2: active
+footer_css_dir: ../css/
 ---
-
 
 Joel's personal playground of his own exploration, research and learning. "Play" and "Learn" coexists with each other to quench his own hunger and thirst - feeding both of his left (logic) and right (creative) side of his brain. In this IO hub you will find different experiments focused on the following categories:
 

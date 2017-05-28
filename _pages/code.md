@@ -1,8 +1,9 @@
 ---
-title: Code Higlights
+title: Codes
 permalink: /codes/
 layout: section
 active4: active
+footer_css_dir: ../css/
 ---
 
 Testing of higlighter:

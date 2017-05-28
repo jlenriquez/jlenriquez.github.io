@@ -4,10 +4,14 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Personal website of Joel Legaspi Enriquez">
+      <meta name="author" content="Joel Legaspi Enriquez">
+      <link rel="icon" href="../../favicon.ico">
       <title>{{ page.title }}</title>
       <!-- Bootstrap -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    </head>
+      <!-- Custom styles for this template -->
+      <link href="{{ page.footer_css_dir }}sticky-footer.css" rel="stylesheet">
     <body>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -44,6 +48,7 @@
                 <li><a href="#">Github</a></li>
                 <li><a href="#">HackerRank</a></li>
                 <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">StackOverflow</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Send me an email...</a></li>
               </ul>
@@ -53,13 +58,12 @@
       </div><!-- /.container-fluid -->
     </nav>
       <div class="container">
-      {{ content }}
+      <p>{{ content }}</p>
       </div><!-- /.container -->
-      <footer>
-          <ul>
-              <li><a href="mailto:jlenriquez@gmail.com">email</a></li>
-              <li><a href="https://github.com/jlenriquez">github.com/jlenriquez</a></li>
-        </ul>
+      <footer class="footer">
+        <div class="container">
+          <p class="text-muted">Copyright (C) 2017. Joel Enriquez. Developer of stuff.</p>
+        </div>
       </footer>
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

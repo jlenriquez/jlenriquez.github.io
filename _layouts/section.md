@@ -3,10 +3,11 @@ layout: default
 ---
 
 <section>
-  <div>
-    <h2>{{ page.title }}</h2>
-    <p>SECTION</p>
+    <div class="page-header">
+        <h2>{{ page.title }}</h2>
+      </div>
+	<div>
   </div>
 </section>
 
-{{ content }}
+<p>{{ content }}</p>
