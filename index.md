@@ -2,6 +2,7 @@
 title: Joel Enriquez
 description: Developer of stuff
 layout: default
+active1: active
 ---
 
 {{ page.title }}

@@ -2,6 +2,7 @@
 title: Resume
 permalink: /resume/
 layout: section
+active3: active
 ---
 
 {{ page.title }}

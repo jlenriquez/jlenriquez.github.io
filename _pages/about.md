@@ -2,6 +2,7 @@
 title: About
 permalink: /about/
 layout: section
+active2: active
 ---
 
 
