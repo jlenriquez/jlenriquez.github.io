@@ -3,7 +3,7 @@ title: Joel Enriquez
 description: Developer of stuff
 layout: default
 active1: active
-footer_css_dir: css/
+css_dir: css/
 ---
 
 <div class="container">

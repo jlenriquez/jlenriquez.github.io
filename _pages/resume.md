@@ -3,7 +3,7 @@ title: Resume
 permalink: /resume/
 layout: section
 active3: active
-footer_css_dir: ../css/
+css_dir: ../css/
 ---
 
 #Joel Enriquez

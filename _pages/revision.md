@@ -3,7 +3,7 @@ title: Page Revisions
 permalink: /revision/
 layout: section
 active5: active
-footer_css_dir: ../css/
+css_dir: ../css/
 ---
 
 <div>
