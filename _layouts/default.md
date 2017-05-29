@@ -10,7 +10,10 @@
       <title>{{ page.title }}</title>
       <!-- Bootstrap -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <!-- Google Fonts -->
+      <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
       <!-- Custom styles for this template -->
+      <link href="{{ page.css_dir }}font.css" rel="stylesheet">
       <link href="{{ page.css_dir }}pastie.css" rel="stylesheet">
       <link href="{{ page.css_dir }}sticky-footer.css" rel="stylesheet">
     <body>
