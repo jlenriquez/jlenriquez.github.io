@@ -1,16 +1,6 @@
 ---
-title: Joel Enriquez
-description: Developer of stuff
-layout: default
-active1: active
-css_dir: css/
----
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-<div class="container">
-	<div class="page-header">
-		<h1>{{ page.title }}</h1>
-	</div>
-	<div class="blurb">
-		{{ page.description }}
-	</div><!-- /.blurb -->
-</div>
+layout: home
+---

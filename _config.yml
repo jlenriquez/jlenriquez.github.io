@@ -1,3 +1,13 @@
+title: Developer of Stuff
+email: 
+description: >- # this means to ignore newlines until "baseurl:"
+  A personal blog of Joel Enriquez, where most of his day time job is being spent
+  developing on Windows platform using C#.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: enriquezjl
+github_username:  jlenriquez
+
 #Where things are
 source_dir:		.
 destination_dir:	./_site
