@@ -1,8 +1,8 @@
 title: Developer of Stuff
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  A personal blog of Joel Enriquez, where most of his day time job is being spent
-  developing solutions on Windows platform using C# since 2004. He is currently based in Kyoto, Japan.
+  A personal blog of Joel Enriquez, where most of his day time job is spent
+  developing solutions on Windows platform using C# since 2004. He is currently residing in Kyoto, Japan.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: enriquezjl
