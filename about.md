@@ -12,4 +12,4 @@ Joel's present work involves development of products related to image processing
 
 Joel is a Christian, a husband, a father and a programmer residing in Kyoto, Japan. 
 
-He and his family attends at a local church in Kyoto at www.kyotoenglishchurch.org, and say hello to them if you happen to visit the area.
+He and his family attends at a local church in Kyoto at www.kyotoenglishchurch.org. Say hello to them if you happen to visit the area.
