@@ -5,8 +5,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   developing solutions on Windows platform using C# since 2004. He is currently residing in Kyoto, Japan.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: enriquezjl
+twitter_username: 
 github_username:  jlenriquez
+hackerrank_username: 
 
 #Where things are
 source_dir:		.
