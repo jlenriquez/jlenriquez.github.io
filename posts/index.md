@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Page Title
-description: This is the page description.
+title: Development Logs
+description: Compilation of articles, events and learning materials he finds useful for developing stuffs. 
 ---
