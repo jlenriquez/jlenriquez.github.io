@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+description: A short story
 ---
 
 Joel Enriquez is happily married with his lovely and supportive wife Louvy Lynn Punzalan (who is taking her PhD at Kyoto University), together with their ever smiling and quickly growing 6-months old son Jeo Lucas.
