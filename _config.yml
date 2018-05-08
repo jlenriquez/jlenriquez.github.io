@@ -17,6 +17,13 @@ layouts_dir:		./_layouts
 data_dir:		./_data
 collections:		null
 
+#Build
+paginate:          5
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
 #Handling reading
 safe:			false
 include:		[".htaccess", "_pages"]
