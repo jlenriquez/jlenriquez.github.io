@@ -56,7 +56,6 @@ baseurl:		""	#does not include host name
 
 #Outputting:
 permalink:		date
-paginate_path:		/page:num
 timezone:		null
 quiet:			false
 defaults:		[]
