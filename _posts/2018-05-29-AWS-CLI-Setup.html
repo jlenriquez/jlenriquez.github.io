@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "AWS CLI Setup"
+subtitle: "Setting up AWS Development with the use of CLI"
+date: 2018-05-29 00:38:13 +0900
+author: Joel
+tags: AWS Cloud
+---
+<p>To begin developing with AWS via CLI (Command Line Interpreter):</p>
+
+{% highlight bash %}
+$ sudo easy_install pip
+{% endhighlight %}
+
+<p>Some requirements during installation...</p>
+{% highlight bash %}
+$ sudo easy_install nose
+$ sudo easy_install tornado
+{% endhighlight %}
+
+<p>Rerun installation, ignoring already installed packages.</p>
+{% highlight bash %}
+$ sudo -H pip install awscli --upgrade --ignore-installed six
+{% endhighlight %}
+
+<p>Check if we successfully install</p>
+{% highlight bash %}
+$ aws --version
+    aws-cli/1.15.28 Python/2.7.10 Darwin/17.4.0 botocore/1.10.28
+{% endhighlight %}
+
+<p>Sign in to your AWS console, and register an access key via Security Credentials. Since my region is located in Tokyo, I chose ap-northeast-1. And response format as json.</p>
+{% highlight bash %}
+$ aws configure
+    AWSAccessKeyId=<Your access key>
+    AWSSecretKey=<Your secret key>
+    Region=ap-northeast-1
+    Format=json
+{% endhighlight %}
+
+<p>Test our configuration, we'll receive an empty json formatted response, as we don't have any ec2 instances running yet.</p>
+{% highlight bash %}
+$ aws ec2 describe-instances
+    {
+        "Reservations": []
+    }
+{% endhighlight %}
