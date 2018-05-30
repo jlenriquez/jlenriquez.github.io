@@ -6,13 +6,20 @@ date: 2018-05-29 00:38:13 +0900
 author: Joel
 tags: AWS Cloud
 ---
-<p>To begin developing with AWS via CLI (Command Line Interpreter):</p>
+
+<p>Note that this is for Mac machine -- to begin developing with AWS via CLI (Command Line Interface), install the awscli:</p>
+
+{% highlight bash %}
+$ sudo pip install awscli
+{% endhighlight %}
+
+<p>If pip is not yet installed:</p>
 
 {% highlight bash %}
 $ sudo easy_install pip
 {% endhighlight %}
 
-<p>Some requirements during installation...</p>
+<p>During installation some requirements for packages like: nose, tornado.</p>
 {% highlight bash %}
 $ sudo easy_install nose
 $ sudo easy_install tornado
@@ -23,7 +30,7 @@ $ sudo easy_install tornado
 $ sudo -H pip install awscli --upgrade --ignore-installed six
 {% endhighlight %}
 
-<p>Check if we successfully install</p>
+<p>Check if we successfully install...</p>
 {% highlight bash %}
 $ aws --version
     aws-cli/1.15.28 Python/2.7.10 Darwin/17.4.0 botocore/1.10.28
