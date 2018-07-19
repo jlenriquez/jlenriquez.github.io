@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "TensorFlow Setup (macOS HighSierra)"
+subtitle: "Setting up TensorFlow r1.9/Keras 2.2.0/Python 2.7"
+date: 2018-07-20 05:59:20 +0900
+author: Joel
+tags: tensorflow keras
+---
+
+<p>Note that this is for Mac machine specific to macOS HighSierra v10.13.13</p>
+<p>According to official tensorflow <a href="www.tensorflow.org/install/install_mac">documentation</a> the preferred way is by <a href="https://virtualenv.pypa.io/en/stable/">virtualenv</a> so we'll be using it here.</p>
+
+<p>Setup virtualenv:</p>
+{% highlight bash %}
+$ sudo easy_install pip
+$ pip install --upgrade virtualenv 
+$ virtualenv --system-site-packages <targetDirectory> # for Python 2.7
+$ cd <targetDirectory>
+$ source ./bin/activate 
+{% endhighlight %}
+
+<p>Setup tensorflow (make sure you're inside the virtualenv, by running source command):</p>
+{% highlight bash %}
+(virtualenv)$ easy_install -U pip   # Ensure pip >= 8.1 is installed
+(virtualenv)$ pip install --upgrade tensorflow      # for Python 2.7
+{% endhighlight %}
+
+<p>Setup jupyter and notebook:</p>
+{% highlight bash %}
+(virtualenv)$ pip install ipykernel
+(virtualenv)$ pip install notebook
+(virtualenv)$ jupyter notebook # this should automatically open jupyter ready for tensorflow/keras.
+{% endhighlight %}
+
+<p>Validate installation (either at Python commandline or jupyter notebook):</p>
+{% highlight python %}
+# TensorFlow validation
+import tensorflow as tf
+hello = tf.constant('Hello, TensorFlow!')
+sess = tf.Session()
+print(sess.run(hello))  # Must display our hello message
+
+# Keras validation
+import keras
+print keras.__version__ # Must display keras' version
+{% endhighlight %}
