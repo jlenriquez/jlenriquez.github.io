@@ -30,7 +30,7 @@ Error
 <p>I am looking specifically for SSE4.1 when _mm_blendv_ps instruction was introduced per <a href="https://software.intel.com/sites/landingpage/IntrinsicsGuide/#techs=SSE4_1&expand=45">Intel documentation</a>.</p>
 
 
-<p>Apparently, looking up with the header I needed to change the external dependency file "defs.h" which includes the header: emmintrin.h. This should be changed to either: smmintrin.h or nmmintrin.h (Btw, def.h is located at: C:\Intel\computer_vision_sdk_yyyy.mm.dd\deployment_tools\inference_engine\src\extension\common\defs.h) </p>
+<p>Apparently, looking up with the header I needed to change the external dependency file "defs.h" which includes the header: emmintrin.h. This should be changed to either: smmintrin.h or nmmintrin.h (Btw, defs.h header file is located at: C:\Intel\computer_vision_sdk_yyyy.mm.dd\deployment_tools\inference_engine\src\extension\common\defs.h) </p>
 
 <p>I am not sure why emmintrin.h was used, it only has SSE2 instructions on it. Below is the table for reference:</p>
 
