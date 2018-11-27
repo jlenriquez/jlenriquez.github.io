@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "OpenVino _mm_blendv_ps Compile Error"
+subtitle: "Error while building Inference Engine samples"
+date:   2018-11-27 13:48:25 +0900
+author: Joel
+---
+
+<p>While trying to compile demo samples of OpenVino, I encountered the following error:</p>
+
+{% highlight bash %}
+###############|| Build Inference Engine samples using MS Visual Studio (MSBuild.exe) ||###############
+
+
+Waiting for 0 seconds, press a key to continue ...
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBuild.exe" Samples.sln /p:Configuration=Release /t:classification_sample /clp:ErrorsOnly /m
+Microsoft (R) Build Engine version 15.8.169+g1ccb72aefa for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+     8>C:\Intel\computer_vision_sdk_2018.4.420\deployment_tools\inference_engine\src\extension\common\softmax.h(92): error C3861: '_mm_blendv_ps': iden
+       tifier not found [C:\Users\JlEnriquez\Documents\Intel\OpenVINO\inference_engine_samples_2017\ie_cpu_extension\ie_cpu_extension.vcxproj]
+Error
+{% endhighlight%}
+
+<p>The _mm_blendv_ps is linked with the SSE instruction that was unknown from my computer environment. I then tried to investigate whether the CPU instruction is missing from my system:</p>
+
+<img class="img-fluid" src="/img/cpu.png" alt="Supported CPU Instructions">
+<span class="caption text-muted">Instructions: MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, EM64T, VT-x</span>
+
+<p>I am looking specifically for SSE4.1 when _mm_blendv_ps instruction was introduced per [Intel documentation]( https://software.intel.com/sites/landingpage/IntrinsicsGuide/#techs=SSE4_1&expand=450).</p>
+
+
+<p>Apparently, looking up with the header I needed to change the external dependency file "defs.h" which includes the header: emmintrin.h. This should be changed to either: smmintrin.h or nmmintrin.h (Btw, def.h is located at: C:\Intel\computer_vision_sdk_yyyy.mm.dd\deployment_tools\inference_engine\src\extension\common\defs.h) </p>
+
+<p>I am not sure why emmintrin.h was used, it only has SSE2 instructions on it. Below is the table for reference:</p>
+
+| Technologies   | Header      |
+|:---------------|:------------|
+| MMX            | mmintrin.h  |
+| SSE            | xmmintrin.h |
+| SSE2           | emmintrin.h |
+| SSE3           | pmmintrin.h |
+| SSSE3          | tmmintrin.h |
+| SSE4.1         | smmintrin.h |
+| SSE4.2         | nmmintrin.h |
+| AES            | wmmintrin.h |
+| AVX, AVX2, FMA | immintrin.h |
+| AVX-512        | zmmintrin.h |
+
+<p>I still have to ask for support from Intel on DevZone why emmintrin.h instructions was used though.</p>
