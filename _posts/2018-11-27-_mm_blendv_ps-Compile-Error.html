@@ -27,26 +27,58 @@ Error
 <img class="img-fluid" src="/img/cpu.png" alt="Supported CPU Instructions">
 <span class="caption text-muted">Instructions: MMX, SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, EM64T, VT-x</span>
 
-<p>I am looking specifically for SSE4.1 when _mm_blendv_ps instruction was introduced per [Intel documentation](https://software.intel.com/sites/landingpage/IntrinsicsGuide/#techs=SSE4_1&expand=450).</p>
+<p>I am looking specifically for SSE4.1 when _mm_blendv_ps instruction was introduced per <a href="https://software.intel.com/sites/landingpage/IntrinsicsGuide/#techs=SSE4_1&expand=45">Intel documentation</a>.</p>
 
 
 <p>Apparently, looking up with the header I needed to change the external dependency file "defs.h" which includes the header: emmintrin.h. This should be changed to either: smmintrin.h or nmmintrin.h (Btw, def.h is located at: C:\Intel\computer_vision_sdk_yyyy.mm.dd\deployment_tools\inference_engine\src\extension\common\defs.h) </p>
 
 <p>I am not sure why emmintrin.h was used, it only has SSE2 instructions on it. Below is the table for reference:</p>
 
-<p>
-| Technologies   | Header      |
-|:---------------|:------------|
-| MMX            | mmintrin.h  |
-| SSE            | xmmintrin.h |
-| SSE2           | emmintrin.h |
-| SSE3           | pmmintrin.h |
-| SSSE3          | tmmintrin.h |
-| SSE4.1         | smmintrin.h |
-| SSE4.2         | nmmintrin.h |
-| AES            | wmmintrin.h |
-| AVX, AVX2, FMA | immintrin.h |
-| AVX-512        | zmmintrin.h |
-</p>
+<table>
+    <tr>
+        <th>Technologies</th>
+        <th>Header</th>
+    </tr>
+    <tr>
+        <td>MMX</td>
+        <td>mmintrin.h</td>
+    </tr>
+     <tr>
+        <td>SSE</td>
+        <td>xmmintrin.h</td>
+    </tr>
+     <tr>
+        <td>SSE2</td>
+        <td>emmintrin.h</td>
+    </tr>
+     <tr>
+        <td>SSE3</td>
+        <td>pmmintrin.h</td>
+    </tr>
+     <tr>
+        <td>SSSE3</td>
+        <td>tmmintrin.h</td>
+    </tr>
+     <tr>
+        <td>SSE4.1</td>
+        <td>smmintrin.h</td>
+    </tr>
+     <tr>
+        <td>SSE4.2</td>
+        <td>nmmintrin.h</td>
+    </tr>
+     <tr>
+        <td>AES</td>
+        <td>wmmintrin.h</td>
+    </tr>
+     <tr>
+        <td>AVX, AVX2, FMA</td>
+        <td>immintrin.h</td>
+    </tr>
+     <tr>
+        <td>AVX-512</td>
+        <td>zmmintrin.h</td>
+    </tr>
+</table>
 
 <p>I still have to ask for support from Intel on DevZone why emmintrin.h instructions was used though.</p>
